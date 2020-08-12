@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Indo AI </title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/tren_image.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>Indo AI</h1>
+            <p>Situs yang memuat berbagai artikel ringan mengenai <i>Artificial Intelligence</i> (AI) dalam Bahasa Indonesia.</p>
+        </div>
+
+        <div class="topnav" id="myTopnav">
+            <a href="#beranda" class="active">Beranda</a>
+            <a href="#definisi">Definisi AI</a>
+            <a href="#tren">Tren AI</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <main id="content">
+        <article id="beranda" class="card">
+            <h2>Selamat Datang di Indo AI</h2>
+            <img src="assets/pictures/illustration1.jpg" class="featured-image" alt="beranda">
+            <p>Indo AI merupakan situs yang memuat berbagai artikel ringan mengenai <i>Artificial Intelligence</i> (AI) (atau yang dalam Bahasa Indonesia dikenal sebagai “Kecerdasan Buatan”). Situs ini dibangun dengan harapan agar AI dapat dengan mudah dipahami
+                oleh berbagai kalangan khususnya di Indonesia. Kedepannya Indo AI akan memuat artikel-artikel yang membahas peran AI dalam kehidupan sehari-hari, perkembangan teknologi AI saat ini, serta tutorial dalam bidang AI. Semoga situs ini dapat
+                membuat AI mudah dikenali dan dipahami di tanah air sekaligus menjadi wadah untuk berbagi ilmu :)</p>
+        </article>
+
+        <article id="definisi" class="card">
+            <h2>Definisi AI</h2>
+            <img src="assets/pictures/Processing-pana.png" class="featured-image" alt="definisi">
+            <p>Ketika mendengar kata <i>Artificial Intelligence</i> (AI) pertama kali, yang sering terlintas dalam benak adalah tokoh-tokoh dalam film seperti Wall-E, Bumblebee dalam Transformers, atau T.A.R.S dalam film Interstellar.Para ahli mendefinisikan
+                AI (Kecerdasan Buatan) secara beragam dalam literatur. Namun menurut Russel&Norvig secara garis besar definisi AI dapat dikategorikan ke dalam dua dimensi berbeda. Kita dapat melihat bahwa definisi AI dikaitkan dengan proses berpikir dan
+                penalaran (reasoning). Sedangkan pada baris kedua (baris bawah) definisi AI dalam Table 1 dikaitkan dengan perilaku (behavior). Nah silakan diingat-ingat kembali apakah tokoh-tokoh mesin cerdas di dalam film-film atau karakter pendukung
+                dalam games favorit Anda memenuhi kriteria di atas untuk layak dikatakan memiliki AI :)). Bagi pembaca yang tertarik untuk memahami AI secara mendalam, silakan membuka-buka buku karangan Russel&Norvig.
+            </p>
+        </article>
+
+        <article id="tren" class="card">
+            <h2>Tren AI</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="assets/pictures/smart_greenhouse.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="assets/pictures/smart_industry.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="assets/pictures/silicon.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="assets/pictures/delivery.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="assets/pictures/smart_greenhouse.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="assets/pictures/smart_industry.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="assets/pictures/silicon.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="assets/pictures/delivery.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+
+                    <div class="column">
+                        <img class="demo cursor" src="assets/pictures/smart_greenhouse.jpg" style="width:100%" onclick="currentSlide(1)" alt="Smart Greenhouse">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="assets/pictures/smart_industry.jpg" style="width:100%" onclick="currentSlide(2)" alt="Smart Industry">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="assets/pictures/silicon.jpg" style="width:100%" onclick="currentSlide(3)" alt="Silicon Wafers">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="assets/pictures/delivery.jpg" style="width:100%" onclick="currentSlide(4)" alt="Delivery Robot">
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Bayangkan Anda ada di masa depan di mana sistem seperti robot sudah mampu berpikir dan bertindak sendiri tanpa pengawasan manusia. Katakan Anda ingin terbang ke Florida untuk mengunjungi sebuah conference. Kemudian Anda harus memilih di antara dua pesawat,
+                yang satu dikendalikan oleh pilot manusia dan pesawat yang satu lagi dijalankan sepenuhnya oleh mesin yang bekerja secara autonomous (tanpa bantuan dan pengawasan manusia). Pesawat mana yang akan anda pilih? Saat orang terdekat anda sedang
+                sakit berat yang mengancam nyawanya dan membutuhkan operasi untuk menentukan kelangsungan hidupnya, apakah Anda akan mempercayai keputusan akhir melakukan operasi pada robot atau dokter (manusia)? Saat seorang ibu sedang berhalangan mengasuh
+                anaknya karena sebab tertentu (seperti bekerja atau sebab lainnya), percayakah Ia untuk menitipkan anaknya pada robot?
+            </p>
+            <p>Meskipun beberapa penemuan terkini telah memungkinkan mesin berkerja secara semi-autonomous, seperti pesawat yang sudah dikendalikan dengan sistem autopilot, namun sebagian besar kinerja mesin saat ini masih membutuhkan pengawasan langsung
+                dari manusia. Selain itu, isu mengenai hukum, etika dan moral menjadi salah satu masalah yang tidak bisa diabaikan. Munculnya teknologi mobil cerdas yang mampu mengemudikan kendaraan tanpa bantuan manusia, contohnya, sekilas tampak seperti
+                mimpi nyata. Tapi bayangkan jika ada seorang anak kecil yang menyeberangi jalan secara tiba-tiba di depan mobil yang berjalan secara autonomous. Apakah mobil itu memilih menabrak anak kecil atau membanting mobil ke sisi jalan raya dengan
+                mengorbankan penumpang di dalamnya? Dapatkah mereka berpikir mengenai hukum, etika dan moral seperti manusia? Lalu jika mobil cerdas tersebut mengalami kecelakaan dan melakukan kesalahan, siapa yang akan dituntut? Apakah ilmuwan penemunya,
+                perancang mesin, atau perusahaan yang memproduksi mesin? Tentu ini bukanlah pertanyaan yang mampu dijawab dengan mudah.
+            </p>
+            <p>
+                Contoh lain dapat kita lihat di bidang militer di mana saat ini terjadi pro dan kontra mengenai apakah senjata autonomous boleh dikembangkan. Bayangkan jika senjata itu benar-benar digunakan di medan perang, dapatkah mesin berpikir dan membedakan penduduk
+                sipil dan tentara yang benar-benar menjadi targetnya? Dalam salah satu artikel IEEE Spectrum yang diposting pada tanggal 1 Juni 2016 silam, Mark Gubrud, mengemukakan berbagai alasan mengapa dunia harus melarang penggunaan senjata autonomous.
+                Postingan ini mengingatkan betapa bahaya teknologi autonomous patut menjadi perhatian di berbagai negara, termasuk Indonesia.
+            </p>
+            <p>
+                Seiring dengan berkembangnya teknologi autonomous, wacana mengenai pentingnya memperhatikan hukum, etika dan moral ke dalam sistem merupakan salah satu topik yang ramai diperbincangkan. Topik ini menjadi sorotan tidak hanya di kalangan ilmuwan komputer
+                dan mesin, namun juga menjadi topik diskusi para pakar di bidang hukum, militer, psikologi, sosiologi, antropologi, kedokteran dan area lainnya. Dan, sama halnya dengan teknologi smartphones yang kini sudah menjadi bagian dalam kehidupan
+                kita sehari-hari, bukan tidak mungkin di masa depan teknologi autonomous akan mengambil peranan penting dalam kehidupan masyarakat dunia, termasuk negara kita. Salah satu contohnya adalah teknologi mobil autonomous yang kini sedang dikembangkan.
+                So, are we ready?
+            </p>
+        </article>
+    </main>
+
+    <aside id="tentang">
+        <article class="profile card">
+            <header>
+                <h4>Tentang Penulis</h4>
+                <figure>
+                    <img class="img1" src="assets/pictures/indah.jpg">
+                </figure>
+            </header>
+
+            <section>
+                <table>
+                    <tr>
+                        <th>Nama</th>
+                        <td>Indah Puspita</td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th>
+                        <td>Padang Pariaman, Sumatera Barat</td>
+                    </tr>
+                    <tr>
+                        <th>Telepon</th>
+                        <td>0822 8566 3947</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>indah_indahpuspita@apps.ipb.ac.id</td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+    </aside>
+
+    <aside id="kontak">
+        <article class="profile card">
+            <header>
+                <h4>Kontak</h4>
+            </header>
+
+            <section>
+                <div class="container">
+                    <form action="/action_page.php">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">Nama</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Nama Lengkap">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="lname">Email</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="lname" name="lastname" placeholder="Alamat Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="subject">Saran</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="subject" name="subject" placeholder="Ketikkan komentar di sini.." style="height:200px"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </article>
+    </aside>
+
+    <footer class="clear">
+        <p> Made with ♥ Indo AI &#169; 2020, Indah Corp.</p>
+    </footer>
+
+    <script src="assets/navbar.js"></script>
+    <script src="assets/tren_image.js"></script>
+
+</body>
+
+</html>
